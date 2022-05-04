@@ -1,0 +1,12 @@
+{
+  "name": "rn-foundation",
+  "version": "0.0.1",
+  "description": "A collection of mobile-first components that work consistently across iOS and Android",
+  "main": "src/index.js",
+  "author": "boyestrous <jpboyes56@gmail.com>",
+  "repository": {
+    "url": "https://example.com/your-username/my-new-project",
+    "type": "git"
+  },
+  "license": "MIT"
+}
