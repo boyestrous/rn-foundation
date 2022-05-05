@@ -20,19 +20,19 @@ describe('CenterView',()=>{
     })    
 
     test('user cannot override justifyContent', ()=>{
-        const component = render(<CenterView style={{backgroundColor: 'red', justifyContent: 'flex-end'}}><TextMock /></CenterView>)
+        const component = render(<CenterView style={{justifyContent: 'flex-end'}}><TextMock /></CenterView>)
         const j = component.container.findByType(View)
         expect(j).toHaveStyle({justifyContent: 'center'})
     })
 
     test('user cannot override alignItems', ()=>{
-        const component = render(<CenterView style={{backgroundColor: 'red', alignItems: 'flex-end'}}><TextMock /></CenterView>)
+        const component = render(<CenterView style={{alignItems: 'flex-end'}}><TextMock /></CenterView>)
         const j = component.container.findByType(View)
         expect(j).toHaveStyle({alignItems: 'center'})
     })
 
     test('user cannot override flex', ()=>{
-        const component = render(<CenterView style={{backgroundColor: 'red', flex: 5}}><TextMock /></CenterView>)
+        const component = render(<CenterView style={{flex: 5}}><TextMock /></CenterView>)
         const j = component.container.findByType(View)
         expect(j).toHaveStyle({flex: 1})
     })

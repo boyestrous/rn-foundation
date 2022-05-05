@@ -1,3 +1,4 @@
 #node modules
 examples/node_modules/
 node_modules/
+build/__tests__/Parker.js

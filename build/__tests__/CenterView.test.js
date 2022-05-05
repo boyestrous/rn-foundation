@@ -22,19 +22,19 @@ describe('CenterView', () => {
         expect(tree.container.findByType(react_native_1.View)).not.toBeEmpty();
     });
     test('user cannot override justifyContent', () => {
-        const component = (0, react_native_2.render)(react_1.default.createElement(CenterView_1.CenterView, { style: { backgroundColor: 'red', justifyContent: 'flex-end' } },
+        const component = (0, react_native_2.render)(react_1.default.createElement(CenterView_1.CenterView, { style: { justifyContent: 'flex-end' } },
             react_1.default.createElement(TextMock_1.default, null)));
         const j = component.container.findByType(react_native_1.View);
         expect(j).toHaveStyle({ justifyContent: 'center' });
     });
     test('user cannot override alignItems', () => {
-        const component = (0, react_native_2.render)(react_1.default.createElement(CenterView_1.CenterView, { style: { backgroundColor: 'red', alignItems: 'flex-end' } },
+        const component = (0, react_native_2.render)(react_1.default.createElement(CenterView_1.CenterView, { style: { alignItems: 'flex-end' } },
             react_1.default.createElement(TextMock_1.default, null)));
         const j = component.container.findByType(react_native_1.View);
         expect(j).toHaveStyle({ alignItems: 'center' });
     });
     test('user cannot override flex', () => {
-        const component = (0, react_native_2.render)(react_1.default.createElement(CenterView_1.CenterView, { style: { backgroundColor: 'red', flex: 5 } },
+        const component = (0, react_native_2.render)(react_1.default.createElement(CenterView_1.CenterView, { style: { flex: 5 } },
             react_1.default.createElement(TextMock_1.default, null)));
         const j = component.container.findByType(react_native_1.View);
         expect(j).toHaveStyle({ flex: 1 });
